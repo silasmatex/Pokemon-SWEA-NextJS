@@ -1,7 +1,6 @@
 "use client"
 
 import Footer from "@/components/FooterComponent/Footer";
-import Navbar from "@/components/NavbarComponent/Navbar";
 import Link from "next/link";
 import { useState } from "react";
 import {FaRegHeart, FaHeart} from "react-icons/fa"
@@ -24,8 +23,7 @@ export default function Home() {
 
   return (
     <>
-      <Navbar/>
-      <div className="bg-amber-600 h-screen flex flex-col items-center justify-center transition-all">
+      <div className="bg-gradient-to-br from-amber-400 to-amber-500 h-screen flex flex-col items-center justify-center transition-all">
 
           <img src="/next.svg" alt="" width={300} className="mb-8"/>
 

@@ -1,5 +1,6 @@
 import { Geist, Geist_Mono } from "next/font/google";
 import "./globals.css";
+import Navbar from "@/components/NavbarComponent/Navbar";
 
 const geistSans = Geist({
   variable: "--font-geist-sans",
@@ -12,6 +13,7 @@ const geistMono = Geist_Mono({
 });
 
 export const metadata = {
+  logo: "poko.png",
   title: "Pokemon - Explorer V2",
   description: "Pokemon site for quick search search",
 };
@@ -22,6 +24,7 @@ export default function RootLayout({ children }) {
       <body
         className={`${geistSans.variable} ${geistMono.variable} antialiased`}
       >
+        <Navbar/>
         {children}
       </body>
     </html>
